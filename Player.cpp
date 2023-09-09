@@ -58,7 +58,7 @@ void Player::Move() {
 	#pragma region 回転
 
 	ImGui::Begin("Camera");
-	ImGui::DragFloat3("rotation", &worldTransform_.rotation_.y, 1.0f);
+	ImGui::DragFloat3("rotation", &worldTransform_.rotation_.x, 1.0f);
 	ImGui::Text("Flag = %d", playerRotateLeftFlag);
 	ImGui::End();
 
